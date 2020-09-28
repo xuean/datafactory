@@ -1,0 +1,17 @@
+{
+	"name": "input",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "inputsql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "DatabaseLog"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,53 @@
+{
+	"name": "output",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "outputsql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "DatabaseLogID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PostTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DatabaseUser",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Event",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Schema",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Object",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TSQL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "XmlEvent",
+				"type": "xml"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "DatabaseLog"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
